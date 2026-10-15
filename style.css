@@ -1,0 +1,208 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    background: #fff6e3;
+    color: #4a2c2a;
+    line-height: 1.6;
+}
+
+a { text-decoration: none; }
+
+/* NAVBAR */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff6e3;
+    border-bottom: 1px solid #f3dcbd;
+}
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo { font-family: "Pinyon Script", cursive; font-size: 34px; color: #c6706a; }
+.menu { list-style: none; display: flex; gap: 30px; }
+.menu a { color: #4a2c2a; font-weight: 600; }
+.telefono {
+    background: #c6706a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+/* HERO */
+.hero {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.hero-text { width: 55%; }
+.mini-title { color: #a9544e; font-weight: 700; }
+.hero h1 {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 1.1;
+    color: #ef3e52;
+    margin-bottom: 20px;
+}
+.lead { font-size: 18px; color: #7a625b; max-width: 480px; }
+.hero-buttons { display: flex; gap: 14px; margin-top: 30px; }
+.btn-primary, .btn-secondary {
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+.btn-primary { background: #ef3e52; color: white; }
+.btn-secondary { border: 2px solid #c6706a; color: #a9544e; }
+
+.hero-mascot {
+    width: 40%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.arch {
+    position: absolute;
+    bottom: 0;
+    width: 88%;
+    height: 92%;
+    background: #c6706a;
+    border-radius: 999px 999px 24px 24px;
+}
+.hero-mascot img { position: relative; width: 72%; max-height: 560px; object-fit: contain; }
+
+/* TÍTULOS DE SECCIÓN */
+.section-heading { text-align: center; margin-bottom: 40px; }
+.section-heading h2 {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-size: 60px;
+    color: #a9544e;
+}
+.section-heading p { color: #7a625b; }
+
+/* NOSOTROS */
+.about { background: #f3dcbd; padding: 80px 8%; }
+.about-grid {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+.about-card { background: #c6706a; color: #fff6e3; padding: 30px; border-radius: 18px; }
+.about-wide { grid-column: 1 / 3; background: #4a1c1c; }
+.about-card h3 { font-family: "Pinyon Script", cursive; font-weight: 400; font-size: 40px; }
+
+/* EXPERIENCIA (restaurante, overol, caja) */
+.identity-section { padding: 80px 8%; }
+.identity-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.identity-card { background: #f3dcbd; border-radius: 18px; overflow: hidden; }
+.identity-img { height: 230px; background: #ffb6c1; }
+.identity-img img { width: 100%; height: 100%; object-fit: cover; }
+.identity-content { padding: 22px; }
+.identity-content h3 { font-family: "Pinyon Script", cursive; font-weight: 400; font-size: 32px; color: #4a1c1c; }
+.identity-content p { color: #7a625b; margin-top: 6px; }
+
+/* MENÚ (una sola imagen) */
+.menu-section { background: #f3dcbd; padding: 80px 8%; }
+.menu-img {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    margin: auto;
+    border-radius: 18px;
+}
+
+/* PRODUCTOS */
+.menu-section{ padding: 80px 8%; }
+.menu {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.card { background: #f3dcbd; border-radius: 18px; overflow: hidden; }
+.product-img { height: 230px; }
+.product-img img { width: 100%; height: 100%; object-fit: cover; }
+.card-content { padding: 22px; }
+.card h3 { font-family: "Pinyon Script", cursive; font-weight: 400; font-size: 32px; color: #4a1c1c; }
+.card p { color: #7a625b; margin: 6px 0 18px; }
+.product-bottom { display: flex; justify-content: space-between; align-items: center; }
+.price { color: #ef3e52; font-size: 22px; font-weight: 700; }
+.btn-card { background: #c6706a; color: white; padding: 8px 22px; border-radius: 20px; font-weight: 700; }
+
+/* CONTACTO */
+.attention { background: #f3dcbd; padding: 80px 8%; }
+.contact-wrap {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.contact-list { list-style: none; flex: 1; }
+.contact-list li { margin-bottom: 16px; }
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 22px;
+    background: #fff6e3;
+    border-radius: 16px;
+    color: #4a2c2a;
+}
+.contact-item svg { width: 36px; height: 36px; fill: #4a1c1c; }
+.contact-item strong { display: block; }
+
+.qr { text-align: center; }
+.qr img {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    padding: 12px;
+    background: white;
+    border: 8px solid #c6706a;
+    border-radius: 22px;
+}
+.qr figcaption { font-family: "Pinyon Script", cursive; font-size: 30px; color: #a9544e; }
+
+/* FOOTER */
+footer { background: #4a1c1c; color: #f3dcbd; text-align: center; padding: 50px 20px; }
+.footer-logo { font-family: "Pinyon Script", cursive; font-size: 44px; color: #ffb6c1; }
+.footer-links { color: #ffb6c1; font-weight: 600; }
+footer small { display: block; margin-top: 18px; color: #b79a8f; }
+
+/* CELULAR */
+@media (max-width: 900px) {
+    .menu { display: none; }
+    .hero { flex-direction: column; text-align: center; }
+    .hero-text, .hero-mascot { width: 100%; }
+    .hero h1 { font-size: 56px; }
+    .lead { margin: auto; }
+    .hero-buttons { justify-content: center; }
+    .hero-mascot { max-width: 380px; min-height: 420px; }
+    .about-grid, .cards, .identity-grid { grid-template-columns: 1fr; }
+    .about-wide { grid-column: auto; }
+    .contact-wrap { flex-direction: column; }
+}
